@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .book{
+		height: 10rem;
+		width: 40%;
+		background: #FFF;
+		position: absolute;
+		right:10%;
+		top:4rem;
+		transform: rotateX(30deg);
+		-webkit-transform: rotateX(30deg);
+		-ms-transform: rotateX(30deg);
+		-o-transform: rotateX(30deg);
+	}
+	/*每頁的公共樣式*/
+	.book-page {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height:10rem;
+		border: 1px solid #1976D2;
+		text-align: center;
+		background-color: #fff;
+	}
+	.book-page p{
+		font-size: 1.2rem;
+		margin-top: 2rem;
+		color: #ff6300;
+		backface-visibility:hidden;
+		-webkit-backface-visibility:hidden;
+	}
+	/*首頁樣式*/
+	.first-page{
+		background-color: #1976D2;
+	}
+	
+	/*動畫部分*/
+	/*I'm the home page動畫*/
+	.flip-animation-start {
+		animation: flipBook1 3s forwards;
+		-moz-animation: flipBook1 3s forwards; /* Firefox */
+		-webkit-animation: flipBook1 3s forwards; /* Safari and Chrome */
+		-o-animation: flipBook1 3s forwards; /* Opera */
+	}
+	.flip-animation-end {
+		animation: flipBook2 3s forwards;
+		-moz-animation: flipBook2 3s forwards; /* Firefox */
+		-webkit-animation: flipBook2 3s forwards; /* Safari and Chrome */
+		-o-animation: flipBook2 3s forwards; /* Opera */
+	}
+	@keyframes flipBook1 {
+		0% {
+			-webkit-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			-o-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+		}
+		100% {
+			-webkit-transform: rotateY(-160deg);
+			-ms-transform: rotateY(-160deg);
+			-o-transform: rotateY(-160deg);
+			transform: rotateY(-160deg);
+		}
+	}
+    
+    </style>
+</head>
+<body>
+    <div class="book preserve-3d">
+        <div class="now_page point">
+            <div class="book-page">
+                <p>第三頁</p>
+            </div>
+        </div>
+
+        <div class="now_page point">
+            <div class="book-page">
+                <p>第二頁</p>
+            </div>
+        </div>
+        
+        <div class="now_page point">
+            <div class="book-page ">
+                <p>第一頁</p>
+            </div>
+        </div>
+        
+        <!--封面-->
+        <div class="point now_page">
+            <div class="book-page first-page">
+                <p>封面</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

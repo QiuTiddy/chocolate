@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>專題</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+        }
+        nav{
+            width: 100%;
+            height: 60px;
+            background-color:navajowhite;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: flex-end;
+            position: fixed;
+        }
+        main{
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;   
+        }
+        .logo{
+            height: 100px;
+            background-size: cover;
+            position: absolute;
+            left: 50px;
+            top: 0px;
+        }
+        .Information{
+            width: 400px;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 30px;
+            color: rgb(104, 53, 30);
+            font-family: cursive;
+            font-size: 18px;
+            font-weight:bolder;
+        }    
+        .banner{
+            background-image: url(/素材/video-bg.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 1600px;
+            height: 800px;
+        }
+        .關於18°C{
+            width: 800px;
+            font-size: 20px;
+            color: rgb(104, 53, 30);
+            font-weight:bolder;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            margin: 80px ;
+            line-height: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        .About{
+            margin: 20px;
+        }
+        @keyframes scaleDraw {  /*定義關鍵幀、scaleDrew是需要繫結到選擇器的關鍵幀名稱*/
+            0%{
+                transform: scale(1);  /*開始為原始大小*/
+            }
+            25%{
+                transform: scale(1.1); /*放大1.1倍*/
+            }
+            50%{
+                transform: scale(1);
+            }
+            75%{
+                transform: scale(1.1);
+            }
+        }
+        .ballon{
+            width: 500px;
+            height: 200px;
+            background: url("images/balloon.png");
+            background-size: 150px 200px;
+            -webkit-animation-name: scaleDraw; /*關鍵幀名稱*/
+            -webkit-animation-timing-function: ease-in-out; /*動畫的速度曲線*/
+            -webkit-animation-iteration-count: infinite;  /*動畫播放的次數*/
+            -webkit-animation-duration: 5s; /*動畫所花費的時間*/  
+        }
+        .present{
+            width: 500px;
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .main{
+            margin-left: -300px;
+            padding: 40px 0px;
+            
+        }
+        .goods{
+            font-size: 100px;
+            color:  rgb(104, 53, 30);
+            font-family: cursive;  
+            
+
+        }
+        .text_1{
+            width: 1000px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .text_2{
+            font-size: 20px;
+            font-family: cursive;
+            color: rgb(104, 53, 30);
+            margin-left: 90px;    
+        }
+        .text_3{
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="/素材/logo-03.jpg" alt="" class="logo" >
+        <div class="Information">
+                <a href="#Feeding"><div class="Home">首頁</div></a>
+                <a href="#anchor1"><div class="About Me">關於18°C</div></a>
+                <a href="#anchor2"><div class="News">最新消息</div></a>
+                <a href="#anchor3"><div class="Product">產品</div></a>
+                <a href="#anchor4"><div class="Contact us">聯絡方式</div></a>
+        </div>      
+    </nav>
+    
+    <main>
+        <div class="banner"id="Feeding"></div>
+        <div class="關於18°C" id="anchor1">
+                <div id="about">
+                    <img src="/素材/關於18度C.jpg" alt="" class="About">
+                </div>
+                <div class="text">
+                ●品牌建立<br>
+                <blockquote>
+                以Feeling18為名，是由於攝氏18度的溫度。<br>
+                對於巧克力來說，無論是生產、保存、或是品嚐，都是最能呈現巧克力風味及優良品質的溫度。<br>
+                溫度上的堅持，是初衷，也是不變的承諾。</blockquote>
+                ●創業精神<br>
+                <blockquote>
+                讓巧克力可以維持18度C的恆溫狀態，風味依舊。<br>
+                堅持溫度，分享幸福。</blockquote>
+                ●初衷承諾<br>
+                <blockquote>每一份真心，溫度每位顧客，是對每位顧客的尊重及不變的承諾。</blockquote>
+                ●願景<br>
+                <blockquote>拓展海外版圖，讓更多人分享Feeling18的幸福甜意。</blockquote>
+            </div>
+        </div>
+        <div class="ballon" id="anchor2">
+            <img src="/素材/活動消息_1.jpg" alt="">
+        </div>
+            <img src="/素材/翻書+點.jpg" alt="">
+        </div>
+
+        <div class="main"id="anchor3">
+            <div class="text_3">
+                <img src="/素材/產品圖.jpg" alt="">
+            </div>
+                <div class="goods">精品</div>
+            </div> 
+        </div>
+        <div class="text_1">
+                <img src="/素材/初戀.png" alt="">
+                <div class="text_2">
+                    <p>麥芽糖醇生巧克力是以健康取向設計的一款，</p>
+                    <P>麥芽糖醇不易被人體吸收，較不影響熱量攝取及血糖升高，也不易蛀牙。</P>
+                    <P>適合對象:小朋友或長輩。</P>
+                </div> 
+        </div> 
+        <div class="text_4"> 
+            <img src="/素材/抹茶巧克力.png" alt=""> 
+            <img src="/素材/草莓巧克力.png" alt="">
+        </div>      
+    </main>
+   
+</body>
+</html>
