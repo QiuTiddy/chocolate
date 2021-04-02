@@ -23,14 +23,13 @@
             position: fixed;
         }
         main{
-           
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;   
         }
         .logo{
-            height: 100px;
+            height: 110px;
             background-size: cover;
             position: absolute;
             left: 50px;
@@ -86,7 +85,7 @@
                 transform: scale(1.1);
             }
         }
-        .ballon{
+        .button{
             width: 500px;
             height: 200px;
             background: url("images/balloon.png");
@@ -102,19 +101,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
         }
         .main{
             margin-left: -300px;
             padding: 40px 0px;
-            
         }
         .goods{
             font-size: 100px;
             color:  rgb(104, 53, 30);
-            font-family: cursive;  
-            
-
+            font-family: cursive; 
         }
         .text_1{
             width: 1000px;
@@ -122,8 +117,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            
         }
         .text_2{
             font-size: 20px;
@@ -133,6 +126,149 @@
         }
         .text_3{
             margin-left: 300px;
+            margin-top: 250px;
+            /* 110.04.01開始加的指令 */
+        }
+        #about{
+            font-size: 40px;
+            font-family:serif;
+            margin: 0px -80px ;
+        }
+        .nnn{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Special{
+            width:100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .perspective {
+            transform-style: preserve-3d;
+        }
+        .page {
+            width: 220px;
+            height: 220px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-origin: left;
+        }
+        .book-cover {
+            animation: roll 6s ease 0s 2 alternate;
+            background-image: url(/素材/得獎照.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 220px;
+            height: 220px;     
+        }
+        .book-content {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/素材/產品.png);   
+        }
+        .book-content1{
+            animation: roll 3s ease 3s 2 alternate;
+            background-image: url(/素材/記者會_2.png);    
+        }
+        .book-content2 {
+            animation: roll 4s ease 2s 2 alternate;
+            background-image: url(/素材/記者會.png);
+        }
+        .book-content3 {
+            animation: roll 5s ease 1s 2 alternate;
+            background-image: url(/素材/活動照_1.png);
+        }
+        @keyframes roll {
+            from {transform: rotateY(0)}
+            to {transform: rotateY(-180deg)}
+        } 
+        .swiper-container {
+        width: 100%;
+        height: 500px;
+        }
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        } 
+        .square{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 800px;
+            margin-top: 80px;
+        }   
+        .文字_1{
+            color:  rgb(104, 53, 30);
+            font-size: 20px;
+            font-family: cursive;
+            margin: -80px;
+        }
+        .square_1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }   
+        .文字_2{
+            color:  rgb(104, 53, 30);
+            font-size: 20px;
+            font-family: cursive;
+            margin: -80px;
+        }
+        .square_2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 800px;
+        }   
+        .濾掛式咖啡{
+            color:  rgb(104, 53, 30);
+            font-size: 20px;
+            font-family: cursive;
+            margin: -120px;
+        }
+        .台茶18號圖片{
+            margin-left: 20px;
+            margin-top: -200px;
+        }
+        .台茶18號{
+            color:  rgb(104, 53, 30);
+            font-size: 20px;
+            font-family: cursive;
+            margin: 120px;
+        }
+        .香茗烏龍圖片{
+            margin-left: 20px;
+            margin-top: -200px;
+        }
+        .香茗烏龍{
+            color:  rgb(104, 53, 30);
+            font-size: 20px;
+            font-family: cursive;
+            margin: 120px;
         }
     </style>
 </head>
@@ -170,7 +306,7 @@
                 <blockquote>拓展海外版圖，讓更多人分享Feeling18的幸福甜意。</blockquote>
             </div>
         </div>
-        <div class="ballon" id="anchor2">
+        <div class="button" id="anchor2">
             <img src="素材/活動消息_1.jpg" alt="">
         </div>
             <img src="素材/翻書+點.jpg" alt="">
@@ -197,7 +333,91 @@
         </div> 
         <div class="伴手禮">
             <img src="/素材/伴手禮.png" alt="">
-        </div>      
+        </div> 
+        <!--<div class="a">還沒貼  -->
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+             <div class="swiper-slide">
+                <img src="/素材/木輪+文字.png" alt="">
+             </div>
+             <div class="swiper-slide">
+                <img src="/素材/吐司+文字.png" alt="">
+             </div>
+             <div class="swiper-slide">
+                <img src="/素材/原味蝴蝶酥+文字.png" alt="">
+             </div>
+            <div class="swiper-slide">
+                <img src="/素材/蝴蝶酥+文字.png" alt="">
+            </div>
+             <div class="swiper-slide" >
+                <img src="/素材/車輪餅+文字.png" alt="" style="width: 100ㄌㄣ;">
+             </div>
+            </div>
+             <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            </div>
+             <!-- 換成首頁Use Swiper from CDN -->
+             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+             <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    });
+                </script>
+            </div>  
+            <div class="咖啡">
+                <img src="/素材/咖啡.png" alt="">
+            </div> 
+            <div class="square">
+                <div class="文字_1">
+                    <p>單品咖啡濾掛禮盒20入</p>
+                </div> 
+                <div class="text_7">
+                    <img src="素材/單品咖啡濾掛.png" alt=""> 
+                </div> 
+            </div>
+            <div class="square_1">
+                <div class="文字_2">
+                    <p>精選咖啡豆組</p>
+                </div> 
+                <div class="text_7">
+                    <img src="素材/咖啡豆.png" alt=""> 
+                </div> 
+            </div>
+            <div class="square_2">
+                <div class="濾掛式咖啡">
+                    <p>濾掛式咖啡</p>
+                </div> 
+                <div class="text_7">
+                    <img src="素材/濾掛式咖啡.png" alt=""> 
+                </div> 
+            </div>
+            <div class="品茶">
+                <img src="/素材/茶品.jpg" alt="">
+            </div> 
+            <div class="台茶18號">
+                <p>紅玉紅茶-台茶18號</p>
+            </div> 
+            <div class="台茶18號圖片">
+                <img src="素材/紅玉紅茶-台茶18號.png" alt=""> 
+            </div>
+            <div class="香茗烏龍">
+                <p>香茗烏龍</p>
+            </div> 
+            <div class="香茗烏龍圖片">
+                <img src="素材/香茗烏龍.png" alt=""> 
+            </div>
+            <div class="聯繫方式圖片">
+                <img src="/素材/聯繫方式.jpg" alt="">
+            </div>   
+        </div> 
     </main>
    
 </body>
