@@ -97,7 +97,14 @@
             -webkit-animation-iteration-count: infinite;  /*動畫播放的次數*/
             -webkit-animation-duration: 5s; /*動畫所花費的時間*/  
         }
-       
+        .present{
+            width: 500px;
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
         .main{
             margin-left: -300px;
             padding: 40px 0px;
@@ -169,87 +176,6 @@
             from {transform: rotateY(0)}
             to {transform: rotateY(-180deg)}
         } 
-        .swiper-container {
-        width: 100%;
-        height: 500px;
-        }
-        .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        } 
-        .square{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-right: 800px;
-            margin-top: 80px;
-        }   
-        .文字_1{
-            color:  rgb(104, 53, 30);
-            font-size: 20px;
-            font-family: cursive;
-            margin: -80px;
-        }
-        .square_1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-top: 50px;
-        }   
-        .文字_2{
-            color:  rgb(104, 53, 30);
-            font-size: 20px;
-            font-family: cursive;
-            margin: -80px;
-        }
-        .square_2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-left: 800px;
-        }   
-        .文字_3{
-            color:  rgb(104, 53, 30);
-            font-size: 20px;
-            font-family: cursive;
-            margin: -120px;
-        }
-        .text_8{
-            margin-left: 20px;
-            margin-top: -200px;
-        }
-        .文字_4{
-            color:  rgb(104, 53, 30);
-            font-size: 20px;
-            font-family: cursive;
-            margin: 120px;
-        }
-        .text_9{
-            margin-left: 20px;
-            margin-top: -200px;
-        }
-        .文字_5{
-            color:  rgb(104, 53, 30);
-            font-size: 20px;
-            font-family: cursive;
-            margin: 120px;
-        }
     </style>
 </head>
 <body>
@@ -284,12 +210,12 @@
                 <blockquote>每一份真心，溫度每位顧客，是對每位顧客的尊重及不變的承諾。</blockquote>
                 ●願景<br>
                 <blockquote>拓展海外版圖，讓更多人分享Feeling18的幸福甜意。</blockquote>
-                </div>
+            </div>
         </div>
+
         <div class="ballon" id="anchor2">
             <img src="素材/活動消息_1.jpg" alt="">
         </div>
-        <!-- 翻書 -->
             <div class="perspective">
                 <div class="book-wrap">
                     <div class="page book-content"></div>
@@ -297,15 +223,17 @@
                     <div class="page book-content book-content2"></div>
                     <div class="page book-content book-content3"></div>
                     <div class="page book-cover"></div>
-                 </div>
-            </div>  
+            </div>
+        </div>
+    </div>
+    
+
         <div class="main"id="anchor3">
             <div class="text_3">
                 <img src="素材/產品圖.jpg" alt="">
             </div>
-            <div class="goods">
-                <img src="素材/精品.png" alt=""></div>
-        </div> 
+                <div class="goods">精品</div>
+            </div> 
         </div>
         <div class="text_1">
                 <img src="素材/初戀.png" alt="">
@@ -318,99 +246,7 @@
         <div class="text_4"> 
             <img src="素材/抹茶巧克力.png" alt=""> 
             <img src="素材/草莓巧克力.png" alt="">
-        </div>  
-        <div class="伴手禮">
-            <img src="/素材/伴手禮.png" alt="">
-        </div> 
-        <div class="a">
-        <!-- Swiper -->
-        <div class="swiper-container">
-        <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <img src="/素材/木輪+文字.png" alt="">
-        </div>
-        <div class="swiper-slide">
-            <img src="/素材/吐司+文字.png" alt="">
-        </div>
-        <div class="swiper-slide">
-            <img src="/素材/原味蝴蝶酥+文字.png" alt="">
-        </div>
-        <div class="swiper-slide">
-            <img src="/素材/蝴蝶酥+文字.png" alt="">
-        </div>
-        <div class="swiper-slide" >
-            <img src="/素材/車輪餅+文字.png" alt="" style="width: 100ㄌㄣ;">
-        </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        </div>
-         <!-- 換成首頁Use Swiper from CDN -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            centeredSlides: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            });
-        </script> 
-        </div>
-        <div class="咖啡">
-            <img src="/素材/咖啡.png" alt="">
-        </div> 
-        <div class="square">
-            <div class="文字_1">
-                <p>單品咖啡濾掛禮盒20入</p>
-            </div> 
-            <div class="text_7">
-                <img src="素材/單品咖啡濾掛.png" alt=""> 
-            </div> 
-        </div>
-        <div class="square_1">
-            <div class="文字_2">
-                <p>精選咖啡豆組</p>
-            </div> 
-            <div class="text_7">
-                <img src="素材/咖啡豆.png" alt=""> 
-            </div> 
-        </div>
-        <div class="square_2">
-            <div class="文字_3">
-                <p>濾掛式咖啡</p>
-            </div> 
-            <div class="text_7">
-                <img src="素材/濾掛式咖啡.png" alt=""> 
-            </div> 
-        </div>
-        <div class="品茶">
-            <img src="/素材/茶品.jpg" alt="">
-        </div> 
-        <div class="文字_4">
-            <p>紅玉紅茶-台茶18號</p>
-        </div> 
-        <div class="text_8">
-            <img src="素材/紅玉紅茶-台茶18號.png" alt=""> 
-        </div>
-        <div class="文字_5">
-            <p>香茗烏龍</p>
-        </div> 
-        <div class="text_9">
-            <img src="素材/香茗烏龍.png" alt=""> 
-        </div>
-        <div class="聯繫方式">
-            <img src="素材/" alt="">
-        </div>     
-
-
-
-
-
-
+        </div>      
     </main>
    
 </body>
