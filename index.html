@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>專題</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
         *{
             box-sizing: border-box;
@@ -52,10 +53,9 @@
         }    
         .banner{
             background-image: url(素材/video-bg.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 1600px;
-            height: 800px;
+            background-size: cover;
+            width: 100%;
+            height: 900px;
         }
         .關於18°C{
             width: 800px;
@@ -100,14 +100,14 @@
        
         .main{
             margin-left: -300px;
-            padding: 40px 0px;
+            padding: 40px 10px;
             
         }
         .goods{
             font-size: 100px;
             color:  rgb(104, 53, 30);
             font-family: cursive;  
-            
+           
 
         }
         .text_1{
@@ -127,6 +127,7 @@
         }
         .text_3{
             margin-left: 300px;
+            margin-top: 250px;
         }
         .perspective {
             transform-style: preserve-3d;
@@ -142,7 +143,7 @@
         }
         .book-cover {
             animation: roll 6s ease 0s 2 alternate;
-            background-image: url(/素材/得獎照.png);
+            background-image: url(素材/得獎照.png);
             background-repeat: no-repeat;
             background-size: cover;
             width: 220px;
@@ -151,19 +152,19 @@
         .book-content {
             background-repeat: no-repeat;
             background-size: cover;
-            background-image: url(/素材/產品.png);   
+            background-image: url(素材/產品.png);   
         }
         .book-content1{
             animation: roll 3s ease 3s 2 alternate;
-            background-image: url(/素材/記者會_2.png);    
+            background-image: url(素材/記者會_2.png);    
         }
         .book-content2 {
             animation: roll 4s ease 2s 2 alternate;
-            background-image: url(/素材/記者會.png);
+            background-image: url(素材/記者會.png);
         }
         .book-content3 {
             animation: roll 5s ease 1s 2 alternate;
-            background-image: url(/素材/活動照_1.png);
+            background-image: url(素材/活動照_1.png);
         }
         @keyframes roll {
             from {transform: rotateY(0)}
@@ -250,6 +251,7 @@
             font-family: cursive;
             margin: 120px;
         }
+       
     </style>
 </head>
 <body>
@@ -265,7 +267,8 @@
     </nav>
     
     <main>
-        <div class="banner"id="Feeding"></div>
+        <div class="banner"id="Feeding">
+        </div>
         <div class="關於18°C" id="anchor1">
                 <div id="about">
                     <img src="素材/關於18度C.jpg" alt="" class="About">
@@ -305,7 +308,7 @@
             </div>
             <div class="goods">
                 <img src="素材/精品.png" alt=""></div>
-        </div> 
+            </div> 
         </div>
         <div class="text_1">
                 <img src="素材/初戀.png" alt="">
@@ -320,27 +323,27 @@
             <img src="素材/草莓巧克力.png" alt="">
         </div>  
         <div class="伴手禮">
-            <img src="/素材/伴手禮.png" alt="">
+            <img src="素材/伴手禮.png" alt="">
         </div> 
-        <div class="a">
+        
         <!-- Swiper -->
         <div class="swiper-container">
-        <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <img src="/素材/木輪+文字.png" alt="">
-        </div>
-        <div class="swiper-slide">
-            <img src="/素材/吐司+文字.png" alt="">
-        </div>
-        <div class="swiper-slide">
-            <img src="/素材/原味蝴蝶酥+文字.png" alt="">
-        </div>
-        <div class="swiper-slide">
-            <img src="/素材/蝴蝶酥+文字.png" alt="">
-        </div>
-        <div class="swiper-slide" >
-            <img src="/素材/車輪餅+文字.png" alt="" style="width: 100ㄌㄣ;">
-        </div>
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="素材/木輪+文字.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="素材/吐司+文字.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="素材/原味蝴蝶酥+文字.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="素材/蝴蝶酥+文字.png" alt="">
+            </div>
+            <div class="swiper-slide" >
+                <img src="素材/車輪餅+文字.png" alt="">
+            </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -359,9 +362,9 @@
             },
             });
         </script> 
-        </div>
+        
         <div class="咖啡">
-            <img src="/素材/咖啡.png" alt="">
+            <img src="素材/咖啡.png" alt="">
         </div> 
         <div class="square">
             <div class="文字_1">
@@ -388,28 +391,25 @@
             </div> 
         </div>
         <div class="品茶">
-            <img src="/素材/茶品.jpg" alt="">
+            <img src="素材/茶品.jpg" alt="">
         </div> 
-        <div class="文字_4">
-            <p>紅玉紅茶-台茶18號</p>
-        </div> 
-        <div class="text_8">
-            <img src="素材/紅玉紅茶-台茶18號.png" alt=""> 
-        </div>
-        <div class="文字_5">
-            <p>香茗烏龍</p>
-        </div> 
-        <div class="text_9">
-            <img src="素材/香茗烏龍.png" alt=""> 
+        <div class="box">
+            <div class="文字_4">
+                <p>紅玉紅茶-台茶18號</p>
+            </div> 
+            <div class="text_8">
+                <img src="素材/紅玉紅茶-台茶18號.png" alt=""> 
+            </div>
+            <div class="文字_5">
+                <p>香茗烏龍</p>
+             </div> 
+             <div class="text_9">
+                <img src="素材/香茗烏龍.png" alt=""> 
+            </div>
         </div>
         <div class="聯繫方式">
-            <img src="素材/" alt="">
+            <img src="素材/聯繫方式.jpg" alt="">
         </div>     
-
-
-
-
-
 
     </main>
    
