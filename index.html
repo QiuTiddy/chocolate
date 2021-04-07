@@ -372,8 +372,11 @@
             margin: 120px;
         }
         .text_9{
-            margin-left: 20px;
-            margin-top: -200px;
+            margin-left: -20px;
+            margin-top: -190px;
+        }
+        .聯繫方式{
+            margin-top:50px;
         }
         .文字_5{
             color:  rgb(104, 53, 30);
@@ -382,6 +385,34 @@
             margin: 120px;
         }
        
+       .BOX{
+           width: 100%;
+           height: 300px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+
+       }
+       .name{
+            width: 500px;
+            height: 40px;
+            background-color: rgb(240, 242, 245);
+            margin: 10px;
+            border-radius: 10px;
+        }
+        
+        .inf{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            text-align: center;
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -524,26 +555,43 @@
         <div class="品茶">
             <img src="素材/茶品.jpg" alt="">
         </div> 
-        <div class="box">
+    <div class="BOX">
+        <div class="box1">
             <div class="文字_4">
                 <p>紅玉紅茶-台茶18號</p>
             </div> 
             <div class="text_8">
                 <img src="素材/紅玉紅茶-台茶18號.png" alt=""> 
             </div>
+        </div>
+        <div class="box2">
             <div class="文字_5">
                 <p>香茗烏龍</p>
              </div> 
              <div class="text_9">
                 <img src="素材/香茗烏龍.png" alt=""> 
-            </div>
+            </div>    
         </div>
-        <div class="聯繫方式">
-            <img src="素材/聯繫方式.jpg" alt="">
-        </div>     
+    </div>
 
-        </div> 
+
+        <div class="聯繫方式" id="anchor4">
+            <img src="素材/聯繫方式.jpg" alt="">
+        </div>
+            <div class="inf">
+            <input type="text" placeholder="姓名：" class="name" style="font-size: 20px;font-family: cursive;">
+            <input type="text" placeholder="生日：" class="name" style="font-size: 20px;font-family: cursive;">
+            <input type="text" placeholder="信箱：" class="name" style="font-size: 20px;font-family: cursive;">
+            <input type="text" placeholder="連絡電話：" class="name" style="font-size: 20px;font-family: cursive;">
+            <input type="text" placeholder="連絡地址：" class="name" style="font-size: 20px;font-family: cursive;">
+
+            </div>          
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.0869045724626!2d120.97268011498524!3d23.957366884487765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468d9903ee0d9a1%3A0xc9a0d6dbd450853b!2zRmVlbGluZzE4KDE45bqmQ-W3p-WFi-WKm-W3peaIvyk!5e0!3m2!1szh-TW!2stw!4v1617772685724!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
         </main>
+        <footer>
+            Copyright © 2021
+        </footer>
    
 </body>
 </html>
