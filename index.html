@@ -45,7 +45,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            margin: 20px 30px;
+            margin: 25px;
             color: rgb(104, 53, 30);
             font-family: cursive;
             font-size: 18px;
@@ -53,9 +53,13 @@
         }    
         .banner{
             background-image: url(素材/video-bg.png);
-            background-size: cover;
+            background-size: contain;
             width: 100%;
-            height: 900px;
+            height: 1000px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
         }
         .關於18°C{
             width: 800px;
@@ -71,7 +75,7 @@
             justify-content: center;
         }
         .About{
-            margin: 20px;
+            margin: 0px;
         }
         @keyframes scaleDraw {  /*定義關鍵幀、scaleDrew是需要繫結到選擇器的關鍵幀名稱*/
             0%{
@@ -96,6 +100,9 @@
             -webkit-animation-timing-function: ease-in-out; /*動畫的速度曲線*/
             -webkit-animation-iteration-count: infinite;  /*動畫播放的次數*/
             -webkit-animation-duration: 5s; /*動畫所花費的時間*/ 
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
        
         .main{
@@ -124,6 +131,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: -150px;
         }
         .text_2{
             font-size: 20px;
@@ -198,25 +206,25 @@
             to {transform: rotateY(-180deg)}
         } 
         .swiper-container {
-        width: 100%;
-        height: 500px;
+            width: 100%;
+            height: 500px;
         }
         .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
+            text-align: center;
+            font-size: 18px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
         } 
         .square{
             display: flex;
@@ -295,25 +303,25 @@
             to {transform: rotateY(-180deg)}
         } 
         .swiper-container {
-        width: 100%;
-        height: 500px;
+            width: 100%;
+            height: 500px;
         }
         .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
+            text-align: center;
+            font-size: 18px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
         } 
         .square{
             display: flex;
@@ -348,7 +356,7 @@
             align-items: center;
             flex-direction: column;
             margin-left: 800px;
-        }   
+        }
         .文字_3{
             color:  rgb(104, 53, 30);
             font-size: 20px;
@@ -401,7 +409,7 @@
         }
         footer{
             text-align: center;
-        }      
+        }  
     </style>
 </head>
 <body>
@@ -420,7 +428,7 @@
         </div>
         <div class="關於18°C" id="anchor1">
                 <div id="about">
-                    <img src="素材/關於18度C.jpg" alt="" class="About">
+                    <img src="素材/關於18°C.jpg" alt="" class="About">
                 </div>
                 <div class="text">
                 ●品牌建立<br>
@@ -439,7 +447,7 @@
                 </div>
         </div>
         <div class="button" id="anchor2">
-            <img src="素材/活動消息_1.jpg" alt="">
+            <img src="素材/活動消息.jpg" alt="">
         </div>
         <!-- 翻書 -->
             <div class="perspective">
@@ -453,10 +461,10 @@
             </div>  
         <div class="main"id="anchor3">
             <div class="text_3">
-                <img src="素材/產品圖.jpg" alt="">
+                <img src="素材/產品.jpg" alt="">
             </div>
             <div class="goods">
-                <img src="素材/精品.png" alt=""></div>
+                <img src="素材/精品_1.jpg" alt=""></div>
             </div> 
         </div>
         <div class="text_1">
@@ -472,7 +480,7 @@
             <img src="素材/草莓巧克力.png" alt="">
         </div>  
         <div class="伴手禮">
-            <img src="素材/伴手禮.png" alt="">
+            <img src="素材/伴手禮_1.jpg" alt="">
         </div>      
         <!-- Swiper -->
         <div class="swiper-container">
@@ -511,7 +519,7 @@
             });
         </script>       
         <div class="咖啡">
-            <img src="素材/咖啡.png" alt="">
+            <img src="素材/咖啡_1.jpg" alt="">
         </div> 
         <div class="square">
             <div class="文字_1">
